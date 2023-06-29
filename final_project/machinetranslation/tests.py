@@ -1,5 +1,5 @@
 # pylint: disable=invalid-name
-"""Module for testing translator.py ."""
+"""Module for testing basics of translator.py ."""
 import unittest
 from translator import englishToFrench, frenchToEnglish
 

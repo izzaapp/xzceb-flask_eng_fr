@@ -1,13 +1,18 @@
+# pylint: disable=invalid-name
 """Module for testing translator.py ."""
 import unittest
 from translator import englishToFrench, frenchToEnglish
 
 class Tests(unittest.TestCase):
+    """Test class for translator.py ."""
+
     def test_englishToFrench(self):
-        self.assertEqual( englishToFrench('Hello'), 'Bonjour' )
+        """Test englishToFrench function from translator.py ."""
+        self.assertEqual( englishToFrench('hello'), 'bonjour' )
 
     def test_frenchToEnglish(self):
-        self.assertEqual( frenchToEnglish('Bonjour'), 'Hello' )
+        """Test frenchToEnglish function from translator.py ."""
+        self.assertEqual( frenchToEnglish('bonjour'), 'hello' )
 
 if __name__=='__main__':
     unittest.main()

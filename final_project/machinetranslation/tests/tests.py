@@ -1,7 +1,12 @@
 # pylint: disable=invalid-name
 """Module for testing translator.py ."""
 import unittest
-from .translator import englishToFrench, frenchToEnglish
+import sys
+import os
+current = os.path.dirname(os.path.realpath(__file__))
+parent = os.path.dirname(current)
+sys.path.append(parent)
+from translator import englishToFrench, frenchToEnglish
 
 class Tests(unittest.TestCase):
     """Test class for translator.py ."""
